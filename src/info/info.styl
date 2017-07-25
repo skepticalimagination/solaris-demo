@@ -1,0 +1,114 @@
+#info
+  display none
+
+  &:before
+    content ''
+    background #fff
+    opacity 0.1
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+  
+  .window
+    background-color rgba(0, 0, 0, 0.9)
+    position fixed
+    top 5vh
+    left 50%
+    transform translate(-50%)
+    bottom 10vh
+    width 600px
+    max-width 90%
+    color #fff
+    border-radius 10px
+    border 2px solid #333
+    z-index 110
+    padding 15px
+
+    .logo
+      width 56px
+      height 56px
+      vertical-align middle
+  
+    h1
+      margin-top 0
+      margin-left 7px
+      display inline
+      vertical-align middle
+      font-size 300%
+
+      .js
+        font-weight normal
+        color #999
+
+    &:before
+      content ''
+      position absolute
+      top 80px
+      left 15px
+      right 15px
+      height 20px
+      background-image linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%)
+      z-index 1
+    
+    .content
+      position absolute
+      top 80px
+      left 15px
+      right 15px
+      bottom 15px
+      padding 0 10px 30px 10px
+      padding-bottom 30px
+      overflow-y auto
+      -webkit-overflow-scrolling touch
+      
+      h2
+        border-bottom 1px solid #333
+        padding-bottom 5px
+        text-transform uppercase
+
+      .icon
+        font-size 24px
+        vertical-align middle
+
+      p
+        line-height 1.7em
+    
+      .sources
+        .icon
+          font-size 18px
+
+        a
+          color #999
+          text-decoration none
+          font-weight bold
+          margin-right 1em
+          vertical-align middle
+          &:hover
+            color #fff
+
+    &:after
+      content ''
+      position absolute
+      bottom 15px
+      left 15px
+      right 15px
+      height 30px
+      background-image linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)
+
+    .close
+      position absolute
+      top 10px
+      right 10px
+      cursor pointer
+      color #333
+      text-align center
+      font-size 250%
+      z-index 1
+      
+      .icon
+        margin-right 0
+
+      &:hover
+        color #666

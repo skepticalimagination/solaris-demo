@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black")
+
+    title Solaris.js Demo
+    meta(name="description" content="desc")
+
+    link(rel="stylesheet" href="ionicons-2.0.1/css/ionicons.min.css")
+    link(rel="stylesheet" href="fonts/raleway/raleway.css")
+    link(rel="stylesheet" href="index.css")
+    
+  body
+    #solaris
+    #showInfo
+    include datepicker/datepicker
+    include info/info
+
+    script.
+      document.URL.match(/^file/) && document.write('<script src="cordova.js"><\/script>')
+    script(src="index.js")

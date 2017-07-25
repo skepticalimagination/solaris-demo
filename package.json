@@ -1,0 +1,44 @@
+{
+  "name": "solaris-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "pug": "pug src/index.pug -o public",
+    "pug-watch": "pug src/index.pug -w -P -o public",
+    "stylus": "stylus src/index.styl -c --include-css -o public/index.css",
+    "stylus-watch": "stylus src/index.styl -w --sourcemap-inline --include-css -o public/index.css",
+    "rollup": "rollup -c",
+    "rollup-watch": "rollup -cw -m inline",
+    "uglify": "uglifyjs public/index.js -cm -o public/index.js",
+    "assets-init": "rm -r public && cp -r assets public",
+    "assets-solaris": "cp -r node_modules/solaris-js/dist public/solaris",
+    "assets": "run-s assets-init assets-solaris",
+    "serve": "live-server public",
+    "dev": "run-s assets && run-p pug-watch stylus-watch rollup-watch serve",
+    "prod": "run-s assets pug stylus rollup uglify",
+    "ios": "cd cordova && cordova run ios"
+  },
+  "engines": {
+    "node": ">= 4.2.0"
+  },
+  "dependencies": {
+    "pikaday": "^1.6.1",
+    "solaris-js": "^0.1.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.6",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "rollup": "^0.43.0",
+    "rollup-plugin-coffee-script": "^1.1.0",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-filesize": "^1.4.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sizes": "^0.4.0",
+    "rollup-watch": "^4.0.0",
+    "stylus": "^0.53.0",
+    "uglify-js": "^3.0.20"
+  },
+  "license": "MIT"
+}

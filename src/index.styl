@@ -1,0 +1,28 @@
+@import "../node_modules/solaris-js/dist/solaris.css"
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body
+  margin 0
+  padding 0
+  height 100%
+  font-size 14px
+  -webkit-text-size-adjust 100%
+  background-color #000
+  overflow hidden
+
+html, body, button
+  font-family Raleway, DejaVu Sans, Bitstream Vera Sans, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif
+
+inert()
+  cursor default
+  user-select none
+  pointer-events none
+
+.icon
+  display inline
+  margin-right 0.4em
+
+@import "src/info/info.styl"
+@import "src/showInfo/showInfo.styl"
+@import "src/datepicker/datepicker.styl"
