@@ -9,7 +9,7 @@ class App
     @solaris = new Solaris('solaris')
 
   onReady: =>
-    navigator.splashscreen.hide()
+    navigator.splashscreen.hide() if navigator.splashscreen
 
     @info = document.getElementById('info')
     @info.style.display = 'block'
