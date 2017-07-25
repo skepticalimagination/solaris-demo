@@ -45,12 +45,21 @@
     &:before
       content ''
       position absolute
-      top 80px
+      top 78px
       left 15px
       right 15px
       height 20px
       background-image linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%)
       z-index 1
+
+    &:after
+      content ''
+      position absolute
+      bottom 15px
+      left 15px
+      right 15px
+      height 30px
+      background-image linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)
     
     .content
       position absolute
@@ -87,15 +96,6 @@
           vertical-align middle
           &:hover
             color #fff
-
-    &:after
-      content ''
-      position absolute
-      bottom 15px
-      left 15px
-      right 15px
-      height 30px
-      background-image linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)
 
     .close
       position absolute
