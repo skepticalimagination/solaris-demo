@@ -6,7 +6,8 @@ class App
     if window.cordova then document.addEventListener('deviceready', @onReady, false)
     else document.addEventListener('DOMContentLoaded', @onReady)
 
-    @solaris = new Solaris('solaris')
+    @solaris = new Solaris 'solaris',
+      fastClickElement: document.getElementById('fastclick')
 
   onReady: =>
     navigator.splashscreen.hide() if navigator.splashscreen
@@ -28,7 +29,7 @@ class App
       defaultDate: @solaris.model.time
       onSelect: @onSelectDate
     @datepicker.style.display = 'block'
-
+ 
   onInfoWindowClick: (e) =>
     if e.target.id is 'info' or e.target.parentElement?.classList?.contains('close')
       @info.style.display = 'none'
