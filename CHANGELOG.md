@@ -12,4 +12,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial release.
 
-[Unreleased]: https://github.com/skepticalimagination/solaris-demo/v0.1.0...HEAD
+[Unreleased]: https://github.com/skepticalimagination/solaris-demo/compare/v0.1.0...HEAD
