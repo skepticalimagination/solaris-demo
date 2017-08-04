@@ -1,10 +1,8 @@
 {
     "name": "com.skepticalimagination.solarisDemo",
-    "private": true,
     "displayName": "Solaris.js Demo",
     "version": "0.1.0",
-    "description": "A demonstration of the open-source component Solaris.js in action",
-    "main": "index.js",
+    "private": true,
     "dependencies": {
         "cordova-custom-config": "^4.0.2",
         "cordova-ios": "^4.4.0",

@@ -1,13 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.skepticalimagination.solarisDemo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.skepticalimagination.solarisDemo" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Solaris.js Demo</name>
-    <description>
-        A demonstration of the open-source component Solaris.js in action
-    </description>
-    <author email="wintermutt@skepticalimagination.com" href="http://skepticalimagination.com">
-        Skeptical Imagination
-    </author>
-    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
