@@ -13,7 +13,7 @@
     "assets-init": "rm -r public && cp -r assets public",
     "assets-solaris": "cp -r node_modules/solaris-js/dist public/solaris",
     "assets": "run-s assets-init assets-solaris",
-    "serve": "live-server public",
+    "serve": "live-server public --no-browser",
     "dev": "run-s assets && run-p pug-watch stylus-watch rollup-watch serve",
     "prod": "run-s assets pug stylus rollup uglify",
     "ios": "cd cordova && cordova run ios"
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "pikaday": "^1.6.1",
-    "solaris-js": "^0.1.0"
+    "solaris-js": "0.1.1"
   },
   "devDependencies": {
     "coffee-script": "^1.12.6",
