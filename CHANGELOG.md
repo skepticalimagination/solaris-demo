@@ -7,11 +7,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ## 0.1.1 - 2017-08-04
+
 ### Fixed
-- Cosmetic fixes
+- Positioning labels correctly when iPhone-style dropdowns are open. (Solaris.js v0.1.1)
+- Updating orbit paths correctly when date changes. (Solaris.js v0.1.1)
+- Info window: fixed top gradient edge.
 
 ### Changed
-- Upgrade to Solaris.js v0.1.1
+- Upgraded to Solaris.js v0.1.1
+- Using native date picker in iOS.
+- Keeping objects centered when date changes. (Solaris.js v0.1.1)
 
 ## 0.1.0 - 2017-07-25
 ### Added
