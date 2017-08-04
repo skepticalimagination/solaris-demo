@@ -16,12 +16,17 @@
     "serve": "live-server public --no-browser",
     "dev": "run-s assets && run-p pug-watch stylus-watch rollup-watch serve",
     "prod": "run-s assets pug stylus rollup uglify",
-    "ios": "cd cordova && cordova run ios"
+    "ios": "cd cordova && cordova run ios",
+    "icon": "cd cordova && cordova-icon --icon=www/apple-touch-icon.png",
+    "splash": "cd cordova && cordova-splash --splash=www/splash.png",
+    "xcode": "open cordova/platforms/ios/Solaris.js\\ Demo.xcworkspace/"
   },
   "engines": {
     "node": ">= 4.2.0"
   },
   "dependencies": {
+    "cordova-icon": "^0.9.1",
+    "cordova-splash": "^0.9.0",
     "pikaday": "^1.6.1",
     "solaris-js": "0.1.1"
   },
