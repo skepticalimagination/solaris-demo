@@ -15,6 +15,5 @@ export default {
   ],
   targets: [
     {format: 'iife', moduleName: 'app', dest: 'public/index.js'}
-  ],
-  external: ['moment']
+  ]
 };
