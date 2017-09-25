@@ -16,8 +16,12 @@ class App
     @info.addEventListener('click', @onInfoWindowClick)
  
     @showInfo = document.getElementById('showInfo')
-    @showInfo.style.display = 'block'
+    @showInfo.style.display = 'inline-block'
     @showInfo.addEventListener('click', @onShowInfoClick)
+
+    @homeButton = document.getElementById('home')
+    @homeButton.style.display = 'inline-block'
+    @homeButton.addEventListener('click', @onHomeButtonClick)
 
     @createDatepicker()
 
@@ -47,6 +51,9 @@ class App
 
   onShowInfoClick: =>
     @info.style.display = 'block'
+
+  onHomeButtonClick: =>
+    @solaris.reset()
 
   onSelectDate: (date) =>
     @solaris.setTime(date)
